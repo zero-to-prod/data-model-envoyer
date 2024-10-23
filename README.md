@@ -9,7 +9,14 @@
 
 This package offers typed classes for [Envoyer API](https://envoyer.io/api-documentation) request and response objects.
 
-## Publish Files
+## Installation
+
+You can install this package via composer:
+```shell
+composer require zero-to-prod/data-model-envoyer
+```
+
+## Publishing Files
 You can directly import these files into your project like this:
 ```shell
 ./vendor/bin/data-model-envoyer ./app/DataModels App\\DataModels
