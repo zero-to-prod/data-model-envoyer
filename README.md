@@ -1,4 +1,4 @@
-_# `Zerotoprod\DataModelEnvoyer`
+# `Zerotoprod\DataModelEnvoyer`
 
 [![Repo](https://img.shields.io/badge/github-gray?logo=github)](https://github.com/zero-to-prod/data-model)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/zero-to-prod/data-model?color=blue)](https://packagist.org/packages/zero-to-prod/data-model/stats)
