@@ -53,4 +53,4 @@ The first argument is the destination and the second is the namespace.
 - [Notifications](https://envoyer.io/api-documentation#list-notifications) `\Zerotoprod\DataModelEnvoyer\Notifications::from();`
 - [Notification](https://envoyer.io/api-documentation#get-notification) `\Zerotoprod\DataModelEnvoyer\Notification::from();`
 - [CreateNotification](https://envoyer.io/api-documentation#create-notification) `\Zerotoprod\DataModelEnvoyer\CreateNotification::from();`
-- [UpdateNotification](https://envoyer.io/api-documentation#update-notification) `\Zerotoprod\DataModelEnvoyer\UpdateNotification::from();`_
+- [UpdateNotification](https://envoyer.io/api-documentation#update-notification) `\Zerotoprod\DataModelEnvoyer\UpdateNotification::from();`
