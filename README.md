@@ -1,9 +1,9 @@
 # `Zerotoprod\DataModelEnvoyer`
 
-[![Repo](https://img.shields.io/badge/github-gray?logo=github)](https://github.com/zero-to-prod/data-model)
-[![Packagist Downloads](https://img.shields.io/packagist/dt/zero-to-prod/data-model?color=blue)](https://packagist.org/packages/zero-to-prod/data-model/stats)
-[![Packagist Version](https://img.shields.io/packagist/v/zero-to-prod/data-model?color=f28d1a)](https://packagist.org/packages/zero-to-prod/data-model)
-[![License](https://img.shields.io/packagist/l/zero-to-prod/data-model?color=red)](https://github.com/zero-to-prod/data-model/blob/main/LICENSE.md)
+[![Repo](https://img.shields.io/badge/github-gray?logo=github)](https://github.com/zero-to-prod/data-model-envoyer)
+[![Packagist Downloads](https://img.shields.io/packagist/dt/zero-to-prod/data-model-envoyer?color=blue)](https://packagist.org/packages/zero-to-prod/data-model-envoyer/stats)
+[![Packagist Version](https://img.shields.io/packagist/v/zero-to-prod/data-model-envoyer?color=f28d1a)](https://packagist.org/packages/zero-to-prod/data-model-envoyer)
+[![License](https://img.shields.io/packagist/l/zero-to-prod/data-model-envoyer?color=red)](https://github.com/zero-to-prod/data-model-envoyer/blob/main/LICENSE.md)
 
 ## DataModels for the Envoyer API.
 
