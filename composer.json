@@ -31,6 +31,7 @@
     }
   },
   "suggest": {
-    "zero-to-prod/data-model": "Transform data into a class."
+    "zero-to-prod/data-model": "Transform data into a class.",
+    "juststeveking/laravel-envoyer-sdk": "A simple to use PHP class to work with the Laravel Envoyer API"
   }
 }
