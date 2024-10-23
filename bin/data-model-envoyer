@@ -1,0 +1,43 @@
+#!/usr/bin/env php
+<?php
+
+if ($argc != 3) {
+    echo "Usage: data-model-envoyer app/DataModels Project\\\\Namespace".PHP_EOL;
+    exit(1);
+}
+
+$target_dir = $argv[1];
+$namespace = $argv[2];
+
+$src_dir = __DIR__.'/../src';
+
+function copy_files($src, $dst, $namespace): void
+{
+    $dir = opendir($src);
+    if (!mkdir($dst, 0777, true) && !is_dir($dst)) {
+        throw new \RuntimeException(sprintf('Directory "%s" was not created', $dst));
+    }
+
+    while (($file = readdir($dir)) !== false) {
+        if (($file !== '.') && ($file !== '..')) {
+            $src_file = $src.'/'.$file;
+            $dst_file = $dst.'/'.$file;
+
+            if (is_dir($src_file)) {
+                copy_files($src_file, $dst_file, $namespace);
+            } else {
+                copy($src_file, $dst_file);
+
+                $content = file_get_contents($dst_file);
+                $content = preg_replace('/^namespace\s+.*;/m', 'namespace '.$namespace.';', $content);
+                file_put_contents($dst_file, $content);
+                echo "Copied file: $dst_file".PHP_EOL;
+            }
+        }
+    }
+    closedir($dir);
+}
+
+copy_files($src_dir, $target_dir, $namespace);
+
+echo "DONE".PHP_EOL;

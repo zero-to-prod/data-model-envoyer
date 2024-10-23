@@ -1,0 +1,36 @@
+{
+  "type": "library",
+  "name": "zero-to-prod/data-model-envoyer",
+  "description": "DataModels for the Envoyer API.",
+  "keywords": [
+    "zero-to-prod",
+    "DataModelEnvoyer",
+    "envoyer",
+    "data-model-envoyer"
+  ],
+  "homepage": "https://github.com/zero-to-prod/data-model-envoyer",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "David Smith",
+      "email": "dave0016@gmail.com"
+    }
+  ],
+  "bin": [
+    "bin/data-model-envoyer"
+  ],
+  "require": {
+    "php": ">=8.1.0",
+    "zero-to-prod/data-model-helper": "^81.0",
+    "zero-to-prod/transformable": "^71.0",
+    "zero-to-prod/data-model": "^81.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Zerotoprod\\DataModelEnvoyer\\": "src/"
+    }
+  },
+  "suggest": {
+    "zero-to-prod/data-model": "Transform data into a class."
+  }
+}

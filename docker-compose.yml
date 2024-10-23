@@ -1,0 +1,23 @@
+services:
+  php81:
+    build:
+      context: docker/php81
+      target: base
+    volumes:
+      - ./:/app
+      - ./docker/php81:/usr/local/etc/php
+
+  php81debug:
+    build:
+      context: docker/php81
+      target: debug
+    volumes:
+      - ./:/app
+
+  php81composer:
+    build:
+      context: docker/php81
+      target: composer
+    volumes:
+      - ./:/app
+      - ./docker/php81:/usr/local/etc/php
