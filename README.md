@@ -1,11 +1,21 @@
-# `Zerotoprod\DataModelEnvoyer`
+# Zerotoprod\DataModelEnvoyer
+
+![](./logo.png)
 
 [![Repo](https://img.shields.io/badge/github-gray?logo=github)](https://github.com/zero-to-prod/data-model-envoyer)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zero-to-prod/data-model-envoyer/test.yml?label=tests)](https://github.com/zero-to-prod/data-model-envoyer/actions)
 [![Packagist Downloads](https://img.shields.io/packagist/dt/zero-to-prod/data-model-envoyer?color=blue)](https://packagist.org/packages/zero-to-prod/data-model-envoyer/stats)
+[![php](https://img.shields.io/packagist/php-v/zero-to-prod/data-model-envoyer.svg?color=purple)](https://packagist.org/packages/zero-to-prod/data-model-envoyer/stats)
 [![Packagist Version](https://img.shields.io/packagist/v/zero-to-prod/data-model-envoyer?color=f28d1a)](https://packagist.org/packages/zero-to-prod/data-model-envoyer)
-[![License](https://img.shields.io/packagist/l/zero-to-prod/data-model-envoyer?color=red)](https://github.com/zero-to-prod/data-model-envoyer/blob/main/LICENSE.md)
+[![License](https://img.shields.io/packagist/l/zero-to-prod/data-model-envoyer?color=pink)](https://github.com/zero-to-prod/data-model/blob/main/LICENSE.md)
 
-## DataModels for the Envoyer API.
+## Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+  - [Publishing Files](#publishing-files)
+- [DataModels](#datamodels)
+
+## Introduction
 
 This package offers typed classes for [Envoyer API](https://envoyer.io/api-documentation) request and response objects.
 
@@ -16,14 +26,14 @@ You can install this package via composer:
 composer require zero-to-prod/data-model-envoyer
 ```
 
-## Publishing Files
+### Publishing Files
 You can directly import these files into your project like this:
 ```shell
 ./vendor/bin/data-model-envoyer ./app/DataModels App\\DataModels
 ```
 The first argument is the destination and the second is the namespace.
 
-### Objects
+## DataModels
 
 - [ProjectResponse](https://envoyer.io/api-documentation#list-projects) `\Zerotoprod\DataModelEnvoyer\ProjectResponse::from();`
 - [Project](https://envoyer.io/api-documentation#get-project) `\Zerotoprod\DataModelEnvoyer\Project::from();`
