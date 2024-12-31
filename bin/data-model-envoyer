@@ -15,7 +15,7 @@ function copy_files($src, $dst, $namespace): void
 {
     $dir = opendir($src);
     if (!mkdir($dst, 0777, true) && !is_dir($dst)) {
-        throw new \RuntimeException(sprintf('Directory "%s" was not created', $dst));
+        throw new RuntimeException(sprintf('Directory "%s" was not created', $dst));
     }
 
     while (($file = readdir($dir)) !== false) {

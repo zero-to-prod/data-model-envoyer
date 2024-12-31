@@ -1,4 +1,4 @@
-FROM php:8.1-cli AS base
+FROM php:8.3-cli AS base
 
 WORKDIR /app
 
@@ -15,7 +15,8 @@ FROM base AS debug
 
 RUN pecl channel-update pecl.php.net && \
     pecl install xdebug && \
-    docker-php-ext-enable xdebug
+    docker-php-ext-enable xdebug && \
+    echo "xdebug.mode=coverage" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
 
 WORKDIR /app
 
