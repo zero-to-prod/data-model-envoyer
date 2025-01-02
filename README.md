@@ -9,7 +9,7 @@
 [![Packagist Version](https://img.shields.io/packagist/v/zero-to-prod/data-model-envoyer?color=f28d1a)](https://packagist.org/packages/zero-to-prod/data-model-envoyer)
 [![License](https://img.shields.io/packagist/l/zero-to-prod/data-model-envoyer?color=pink)](https://github.com/zero-to-prod/data-model/blob/main/LICENSE.md)
 [![wakatime](https://wakatime.com/badge/github/zero-to-prod/data-model-envoyer.svg)](https://wakatime.com/badge/github/zero-to-prod/data-model-envoyer)
-[![Hits-of-Code](https://hitsofcode.com/github/zero-to-prod//data-model-envoyer?branch=main)](https://hitsofcode.com/github/zero-to-prod//data-model-envoyer/view?branch=main)
+[![Hits-of-Code](https://hitsofcode.com/github/zero-to-prod/data-model-envoyer?branch=main)](https://hitsofcode.com/github/zero-to-prod/data-model-envoyer/view?branch=main)
 
 ## Contents
 - [Introduction](#introduction)
