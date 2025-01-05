@@ -11,10 +11,10 @@
   "homepage": "https://github.com/zero-to-prod/data-model-envoyer",
   "support": {
     "email": "dave0016@gmail.com",
-    "issues": "https://github.com/zero-to-prod/data-model-envoyerissues",
-    "source": "https://github.com/zero-to-prod/data-model",
+    "issues": "https://github.com/zero-to-prod/data-model-envoyer/issues",
+    "source": "https://github.com/zero-to-prod/data-model-envoyer",
     "docs": "https://zero-to-prod.github.io/data-model-envoyer",
-    "security": "https://github.com/zero-to-prod/data-model-envoyerblob/main/SECURITY.md"
+    "security": "https://github.com/zero-to-prod/data-model-envoyer/blob/main/SECURITY.md"
   },
   "license": "MIT",
   "readme": "./README.md",
