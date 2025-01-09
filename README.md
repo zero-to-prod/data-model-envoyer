@@ -1,6 +1,6 @@
 # Zerotoprod\DataModelEnvoyer
 
-![](./logo.png)
+![](art/logo.png)
 
 [![Repo](https://img.shields.io/badge/github-gray?logo=github)](https://github.com/zero-to-prod/data-model-envoyer)
 [![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/zero-to-prod/data-model-envoyer/test.yml?label=tests)](https://github.com/zero-to-prod/data-model-envoyer/actions)
