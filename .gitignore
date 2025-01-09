@@ -1,10 +1,8 @@
 vendor
+.vendor
 .idea
 composer.lock
 .phpunit.result.cache
-.php-cs-fixer.cache
 /.phpunit.cache/test-results
-/vendor-php81/
-/vendor-php82/
-/vendor-php83/
-/vendor-php84/
+/.env
+/.phpunit.cache/
