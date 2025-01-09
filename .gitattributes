@@ -11,3 +11,4 @@
 /README.md                export-ignore
 /SECURITY.md              export-ignore
 /test.sh                  export-ignore
+/dock                     export-ignore
