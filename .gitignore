@@ -6,3 +6,5 @@ composer.lock
 /.phpunit.cache/test-results
 /.env
 /.phpunit.cache/
+.vendor/
+.env
