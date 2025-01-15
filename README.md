@@ -33,7 +33,7 @@ composer require zero-to-prod/data-model-envoyer
 ### Publishing Files
 You can directly import these files into your project like this:
 ```shell
-./vendor/bin/data-model-envoyer ./app/DataModels App\\DataModels
+./vendor/bin/data-model-envoyer app/DataModels
 ```
 The first argument is the destination and the second is the namespace.
 
