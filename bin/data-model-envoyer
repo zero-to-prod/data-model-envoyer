@@ -1,43 +1,37 @@
 #!/usr/bin/env php
 <?php
 
-if ($argc != 3) {
-    echo "Usage: data-model-envoyer app/DataModels Project\\\\Namespace".PHP_EOL;
-    exit(1);
+require getcwd() . '/vendor/autoload.php';
+
+use Zerotoprod\PackageHelper\PackageHelper;
+
+if ($argc !== 2) {
+    die("Usage: <targetDir>\n");
 }
 
-$target_dir = $argv[1];
-$namespace = $argv[2];
-
-$src_dir = __DIR__.'/../src';
-
-function copy_files($src, $dst, $namespace): void
-{
-    $dir = opendir($src);
-    if (!mkdir($dst, 0777, true) && !is_dir($dst)) {
-        throw new RuntimeException(sprintf('Directory "%s" was not created', $dst));
-    }
-
-    while (($file = readdir($dir)) !== false) {
-        if (($file !== '.') && ($file !== '..')) {
-            $src_file = $src.'/'.$file;
-            $dst_file = $dst.'/'.$file;
-
-            if (is_dir($src_file)) {
-                copy_files($src_file, $dst_file, $namespace);
-            } else {
-                copy($src_file, $dst_file);
-
-                $content = file_get_contents($dst_file);
-                $content = preg_replace('/^namespace\s+.*;/m', 'namespace '.$namespace.';', $content);
-                file_put_contents($dst_file, $content);
-                echo "Copied file: $dst_file".PHP_EOL;
-            }
-        }
-    }
-    closedir($dir);
+$from = __DIR__ . '/../src';
+if (!is_dir($from)) {
+    throw new RuntimeException("Source directory '$from' not found.");
 }
 
-copy_files($src_dir, $target_dir, $namespace);
+$composer_json_file_path = getcwd() . '/composer.json';
+if (!is_file($composer_json_file_path)) {
+    throw new RuntimeException("composer.json not found.");
+}
 
-echo "DONE".PHP_EOL;
+$composer_json_data = json_decode(file_get_contents($composer_json_file_path), true);
+$psr_4 = $composer_json_data['autoload']['psr-4'] ?? null;
+
+if (!$psr_4) {
+    throw new RuntimeException('PSR-4 autoload section missing in composer.json.');
+}
+
+$to = rtrim($argv[1], '/');
+PackageHelper::publish(
+    $from,
+    $to,
+    PackageHelper::determineNamespace($psr_4, $to),
+    static function(string $from, string $to){
+        echo "Copied: $from to $to" . PHP_EOL;
+    }
+);
