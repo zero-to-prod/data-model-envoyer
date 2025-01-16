@@ -12,10 +12,11 @@
 [![Hits-of-Code](https://hitsofcode.com/github/zero-to-prod/data-model-envoyer?branch=main)](https://hitsofcode.com/github/zero-to-prod/data-model-envoyer/view?branch=main)
 
 ## Contents
+
 - [Introduction](#introduction)
 - [Installation](#installation)
-  - [Publishing Files](#publishing-files)
 - [DataModels](#datamodels)
+- [Publishing DataModels](#publishing-datamodels)
 - [Local Development](./LOCAL_DEVELOPMENT.md)
 - [Contributing](#contributing)
 
@@ -26,16 +27,10 @@ This package offers typed classes for [Envoyer API](https://envoyer.io/api-docum
 ## Installation
 
 You can install this package via composer:
+
 ```shell
 composer require zero-to-prod/data-model-envoyer
 ```
-
-### Publishing Files
-You can directly import these files into your project like this:
-```shell
-./vendor/bin/data-model-envoyer app/DataModels
-```
-The first argument is the destination and the second is the namespace.
 
 ## DataModels
 
@@ -75,6 +70,16 @@ The first argument is the destination and the second is the namespace.
 - [Notification](https://envoyer.io/api-documentation#get-notification) `\Zerotoprod\DataModelEnvoyer\Notification::from();`
 - [CreateNotification](https://envoyer.io/api-documentation#create-notification) `\Zerotoprod\DataModelEnvoyer\CreateNotification::from();`
 - [UpdateNotification](https://envoyer.io/api-documentation#update-notification) `\Zerotoprod\DataModelEnvoyer\UpdateNotification::from();`
+
+## Publishing DataModels
+
+You can directly import these files into your project like this:
+
+```shell
+./vendor/bin/data-model-envoyer app/DataModels
+```
+
+The first argument is the destination of where the files are copied to.
 
 ## Contributing
 
