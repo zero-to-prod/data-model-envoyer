@@ -76,7 +76,7 @@ composer require zero-to-prod/data-model-envoyer
 You can directly import these files into your project like this:
 
 ```shell
-./vendor/bin/data-model-envoyer app/DataModels
+./vendor/bin/data-model-envoyer app/DataModelEnvoyer
 ```
 
 The first argument is the destination of where the files are copied to.
