@@ -5,69 +5,148 @@ namespace Zerotoprod\DataModelEnvoyer;
 use Zerotoprod\DataModel\Describe;
 use Zerotoprod\DataModelHelper\DataModelHelper;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class Deployment
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const id = 'id';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const project_id = 'project_id';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const user_id = 'user_id';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const commit_branch = 'commit_branch';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const commit_hash = 'commit_hash';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const commit_author = 'commit_author';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const commit_avatar = 'commit_avatar';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const commit_message = 'commit_message';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const status = 'status';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const created_at = 'created_at';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const updated_at = 'updated_at';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const processes = 'processes';
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const project = 'project';
 
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $id;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $project_id;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $user_id;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $commit_branch;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $commit_hash;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $commit_author;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $commit_avatar;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $commit_message;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $status;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $created_at;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $updated_at;
     /**
      * @var Process[] $processes
      *
-     * @link https://envoyer.io/api-documentation#get-deployment
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
      */
     #[Describe([
         'cast' => [DataModelHelper::class, 'mapOf'],
         'type' => Process::class,
     ])]
     public array $processes;
-    /** @link https://envoyer.io/api-documentation#get-deployment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-deployment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public Project $project;
 }
