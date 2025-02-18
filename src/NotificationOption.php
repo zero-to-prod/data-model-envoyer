@@ -2,13 +2,22 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class NotificationOption
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const webhook = 'webhook';
 
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $webhook;
 }
