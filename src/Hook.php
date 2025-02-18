@@ -2,53 +2,122 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class Hook
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const user_id = 'user_id';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const action_id = 'action_id';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const timing = 'timing';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const name = 'name';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const run_as = 'run_as';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const script = 'script';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const sequence = 'sequence';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const project_id = 'project_id';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const updated_at = 'updated_at';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const created_at = 'created_at';
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const id = 'id';
 
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $user_id;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $action_id;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $timing;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $name;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $run_as;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $script;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $sequence;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $project_id;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $updated_at;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $created_at;
-    /** @link https://envoyer.io/api-documentation#get-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $id;
 }
