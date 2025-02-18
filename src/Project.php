@@ -5,189 +5,440 @@ namespace Zerotoprod\DataModelEnvoyer;
 use Zerotoprod\DataModel\Describe;
 use Zerotoprod\DataModelHelper\DataModelHelper;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class Project
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const id = 'id';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const user_id = 'user_id';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const version = 'version';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const name = 'name';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const provider = 'provider';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const plain_repository = 'plain_repository';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const repository = 'repository';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const type = 'type';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const branch = 'branch';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const push_to_deploy = 'push_to_deploy';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const webhook_id = 'webhook_id';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const status = 'status';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const should_deploy_again = 'should_deploy_again';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const deployment_started_at = 'deployment_started_at';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const deployment_finished_at = 'deployment_finished_at';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const last_deployment_status = 'last_deployment_status';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const daily_deploys = 'daily_deploys';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const weekly_deploys = 'weekly_deploys';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const last_deployment_took = 'last_deployment_took';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const retain_deployments = 'retain_deployments';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const environment_servers = 'environment_servers';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const folders = 'folders';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const monitor = 'monitor';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const new_york_status = 'new_york_status';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const london_status = 'london_status';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const singapore_status = 'singapore_status';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const token = 'token';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const created_at = 'created_at';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const updated_at = 'updated_at';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const install_dev_dependencies = 'install_dev_dependencies';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const install_dependencies = 'install_dependencies';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const quiet_composer = 'quiet_composer';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const servers = 'servers';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const has_environment = 'has_environment';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const has_monitoring_error = 'has_monitoring_error';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const has_missing_heartbeats = 'has_missing_heartbeats';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const last_deployed_branch = 'last_deployed_branch';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const last_deployment_id = 'last_deployment_id';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const last_deployment_author = 'last_deployment_author';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const last_deployment_avatar = 'last_deployment_avatar';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const last_deployment_hash = 'last_deployment_hash';
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const last_deployment_timestamp = 'last_deployment_timestamp';
 
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $id;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $user_id;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $version;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $name;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public Provider $provider;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $plain_repository;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $repository;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public ProjectType $type;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $branch;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $push_to_deploy;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public ?int $webhook_id;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public ?string $status;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $should_deploy_again;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public ?string $deployment_started_at;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $deployment_finished_at;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $last_deployment_status;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $daily_deploys;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $weekly_deploys;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $last_deployment_took;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $retain_deployments;
     /**
      * @var int[]
      *
-     * @link https://envoyer.io/api-documentation#list-projects
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
      */
     public array $environment_servers;
 
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public array $folders;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $monitor;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $new_york_status;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $london_status;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $singapore_status;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $token;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $created_at;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $updated_at;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $install_dev_dependencies;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $install_dependencies;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $quiet_composer;
     /**
      * @var Server[] $servers
-     * @link https://envoyer.io/api-documentation#list-projects
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
      */
     #[Describe([
         'cast' => [DataModelHelper::class, 'mapOf'],
         'type' => Server::class
     ])]
     public array $servers;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $has_environment;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $has_monitoring_error;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $has_missing_heartbeats;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $last_deployed_branch;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $last_deployment_id;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $last_deployment_author;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $last_deployment_avatar;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $last_deployment_hash;
-    /** @link https://envoyer.io/api-documentation#list-projects */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-projects
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $last_deployment_timestamp;
 }
