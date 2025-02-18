@@ -4,14 +4,23 @@ namespace Zerotoprod\DataModelEnvoyer;
 
 use Zerotoprod\DataModel\Describe;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class GetEnvironment
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#get-environment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-environment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const key = 'key';
 
-    /** @link https://envoyer.io/api-documentation#get-environment */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-environment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     #[Describe(['required' => true])]
     public string $key;
 }
