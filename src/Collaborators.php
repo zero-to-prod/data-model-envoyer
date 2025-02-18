@@ -5,17 +5,24 @@ namespace Zerotoprod\DataModelEnvoyer;
 use Zerotoprod\DataModel\Describe;
 use Zerotoprod\DataModelHelper\DataModelHelper;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class Collaborators
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#list-collaborators */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-collaborators
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const collaborators = 'collaborators';
 
     /**
      * @var Collaborator[] $collaborators
      *
-     * @link https://envoyer.io/api-documentation#list-collaborators
+     * @see  https://envoyer.io/api-documentation#list-collaborators
+     * @link https://github.com/zero-to-prod/data-model-envoyer
      */
     #[Describe([
             'cast' => [DataModelHelper::class, 'mapOf'],

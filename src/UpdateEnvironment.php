@@ -2,21 +2,42 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class UpdateEnvironment
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#update-environment */
+    /**
+     * @see  https://envoyer.io/api-documentation#update-environment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const key = 'key';
-    /** @link https://envoyer.io/api-documentation#update-environment */
+    /**
+     * @see  https://envoyer.io/api-documentation#update-environment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const contents = 'contents';
-    /** @link https://envoyer.io/api-documentation#update-environment */
+    /**
+     * @see  https://envoyer.io/api-documentation#update-environment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const servers = 'servers';
 
-    /** @link https://envoyer.io/api-documentation#update-environment */
+    /**
+     * @see  https://envoyer.io/api-documentation#update-environment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $key;
-    /** @link https://envoyer.io/api-documentation#update-environment */
+    /**
+     * @see  https://envoyer.io/api-documentation#update-environment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $contents;
-    /** @link https://envoyer.io/api-documentation#update-environment */
+    /**
+     * @see  https://envoyer.io/api-documentation#update-environment
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public array $servers;
 }

@@ -2,38 +2,75 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class CreateHook
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const name = 'name';
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const script = 'script';
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const run_as = 'runAs';
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const action_id = 'actionId';
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const timing = 'timing';
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const servers = 'servers';
 
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $name;
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $script;
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $run_as;
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $action_id;
-    /** @link https://envoyer.io/api-documentation#create-hook */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-hook
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $timing;
 
     /**
-     * @link https://envoyer.io/api-documentation#create-hook
+     * @see  https://envoyer.io/api-documentation#create-hook
      *
      * @var int[]
+     * @link https://github.com/zero-to-prod/data-model-envoyer
      */
     public array $servers;
 }

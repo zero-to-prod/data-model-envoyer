@@ -4,49 +4,106 @@ namespace Zerotoprod\DataModelEnvoyer;
 
 use Zerotoprod\DataModel\Describe;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class CreateServer
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const name = 'name';
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const connect_as = 'connectAs';
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const host = 'host';
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const port = 'port';
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const php_version = 'phpVersion';
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const receives_code_deployments = 'receivesCodeDeployments';
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const deployment_path = 'deploymentPath';
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const restart_fpm = 'restartFpm';
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const composer_path = 'composerPath';
 
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     #[Describe(['required' => true])]
     public string $name;
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     #[Describe(['required' => true])]
     public string $connect_as;
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     #[Describe(['required' => true])]
     public string $host;
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $port;
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     #[Describe(['required' => true])]
     public PhpVersion $php_version;
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $receives_code_deployments;
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $deployment_path;
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public bool $restart_fpm;
-    /** @link https://envoyer.io/api-documentation#create-server */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-server
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $composer_path;
 }

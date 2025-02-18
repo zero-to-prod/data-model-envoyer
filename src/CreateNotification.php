@@ -2,33 +2,72 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class CreateNotification
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const name = 'name';
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const type = 'type';
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const email_address = 'email_address';
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const slack_webhook = 'slack_webhook';
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const discord_webhook = 'discord_webhook';
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const teams_webhook = 'teams_webhook';
 
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $name;
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public NotificationType $type;
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $email_address;
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $slack_webhook;
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $discord_webhook;
-    /** @link https://envoyer.io/api-documentation#get-notification */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-notification
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $teams_webhook;
 }

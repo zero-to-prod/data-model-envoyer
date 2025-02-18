@@ -5,17 +5,24 @@ namespace Zerotoprod\DataModelEnvoyer;
 use Zerotoprod\DataModel\Describe;
 use Zerotoprod\DataModelHelper\DataModelHelper;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class Notifications
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#list-notifications */
+    /**
+     * @see  https://envoyer.io/api-documentation#list-notifications
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const notifications = 'notifications';
 
     /**
      * @var Notification[] $notifications
      *
-     * @link https://envoyer.io/api-documentation#list-notifications
+     * @see  https://envoyer.io/api-documentation#list-notifications
+     * @link https://github.com/zero-to-prod/data-model-envoyer
      */
     #[Describe([
             'cast' => [DataModelHelper::class, 'mapOf'],

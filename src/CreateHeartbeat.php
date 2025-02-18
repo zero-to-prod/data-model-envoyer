@@ -2,11 +2,17 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class CreateHeartbeat
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#create-heartbeat */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-heartbeat
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const name = 'name';
     /**
      * Intervals are minute based and can be one of the following:
@@ -18,11 +24,15 @@ class CreateHeartbeat
      * 10080 (1 Week)
      * 44640 (1 Month)
      *
-     * @link https://envoyer.io/api-documentation#create-heartbeat
+     * @see  https://envoyer.io/api-documentation#create-heartbeat
+     * @link https://github.com/zero-to-prod/data-model-envoyer
      */
     public const interval = 'interval';
 
-    /** @link https://envoyer.io/api-documentation#create-heartbeat */
+    /**
+     * @see  https://envoyer.io/api-documentation#create-heartbeat
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $name;
     /**
      * Intervals are minute based and can be one of the following:
@@ -34,7 +44,8 @@ class CreateHeartbeat
      * 10080 (1 Week)
      * 44640 (1 Month)
      *
-     * @link https://envoyer.io/api-documentation#create-heartbeat
+     * @see  https://envoyer.io/api-documentation#create-heartbeat
+     * @link https://github.com/zero-to-prod/data-model-envoyer
      */
     public int $interval;
 }

@@ -2,17 +2,32 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class Folder
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#get-linked-folders */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-linked-folders
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const from = 'from';
-    /** @link https://envoyer.io/api-documentation#get-linked-folders */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-linked-folders
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const to = 'to';
 
-    /** @link https://envoyer.io/api-documentation#get-linked-folders */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-linked-folders
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $from;
-    /** @link https://envoyer.io/api-documentation#get-linked-folders */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-linked-folders
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $to;
 }

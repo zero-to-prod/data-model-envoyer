@@ -2,24 +2,51 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class Collaborator
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#get-collaborator */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-collaborator
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const id = 'id';
-    /** @link https://envoyer.io/api-documentation#get-collaborator */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-collaborator
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const name = 'name';
-    /** @link https://envoyer.io/api-documentation#get-collaborator */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-collaborator
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const email = 'email';
-    /** @link https://envoyer.io/api-documentation#get-collaborator */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-collaborator
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const pivot = 'pivot';
-    /** @link https://envoyer.io/api-documentation#get-collaborator */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-collaborator
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public int $id;
-    /** @link https://envoyer.io/api-documentation#get-collaborator */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-collaborator
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $name;
-    /** @link https://envoyer.io/api-documentation#get-collaborator */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-collaborator
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $email;
-    /** @link https://envoyer.io/api-documentation#get-collaborator */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-collaborator
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public CollaboratorPivot $pivot;
 }

@@ -2,21 +2,42 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class DeployProject
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#deploy-project */
+    /**
+     * @see  https://envoyer.io/api-documentation#deploy-project
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const from = 'from';
-    /** @link https://envoyer.io/api-documentation#deploy-project */
+    /**
+     * @see  https://envoyer.io/api-documentation#deploy-project
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const branch = 'branch';
-    /** @link https://envoyer.io/api-documentation#deploy-project */
+    /**
+     * @see  https://envoyer.io/api-documentation#deploy-project
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const tag = 'tag';
 
-    /** @link https://envoyer.io/api-documentation#deploy-project */
+    /**
+     * @see  https://envoyer.io/api-documentation#deploy-project
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $from;
-    /** @link https://envoyer.io/api-documentation#deploy-project */
+    /**
+     * @see  https://envoyer.io/api-documentation#deploy-project
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $branch;
-    /** @link https://envoyer.io/api-documentation#deploy-project */
+    /**
+     * @see  https://envoyer.io/api-documentation#deploy-project
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public string $tag;
 }

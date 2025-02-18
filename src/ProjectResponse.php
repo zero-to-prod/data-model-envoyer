@@ -2,13 +2,22 @@
 
 namespace Zerotoprod\DataModelEnvoyer;
 
+/**
+ * @link https://github.com/zero-to-prod/data-model-envoyer
+ */
 class ProjectResponse
 {
     use DataModel;
 
-    /** @link https://envoyer.io/api-documentation#get-project */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-project
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public const project = 'project';
 
-    /** @link https://envoyer.io/api-documentation#get-project */
+    /**
+     * @see  https://envoyer.io/api-documentation#get-project
+     * @link https://github.com/zero-to-prod/data-model-envoyer
+     */
     public Project $project;
 }
