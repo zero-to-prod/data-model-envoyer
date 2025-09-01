@@ -4,6 +4,7 @@ namespace Zerotoprod\DataModelEnvoyer;
 
 /**
  * @link https://github.com/zero-to-prod/data-model-envoyer
+ * DataModels for the Envoyer API.
  */
 class UpdateProject
 {
