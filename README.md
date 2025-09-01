@@ -16,6 +16,8 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
+- [Documentation Publishing](#documentation-publishing)
+    - [Automatic Documentation Publishing](#automatic-documentation-publishing)
 - [DataModels](#datamodels)
 - [Publishing DataModels](#publishing-datamodels)
 - [Local Development](./LOCAL_DEVELOPMENT.md)
@@ -31,6 +33,39 @@ You can install this package via composer:
 
 ```shell
 composer require zero-to-prod/data-model-envoyer
+```
+
+## Documentation Publishing
+
+You can publish this README to your local documentation directory.
+
+This can be useful for providing documentation for AI agents.
+
+This can be done using the included script:
+
+```bash
+# Publish to default location (./docs/zero-to-prod/data-model-envoyer)
+vendor/bin/zero-to-prod-data-model-envoyer
+
+# Publish to custom directory
+vendor/bin/zero-to-prod-data-model-envoyer /path/to/your/docs
+```
+
+### Automatic Documentation Publishing
+
+You can automatically publish documentation by adding the following to your `composer.json`:
+
+```json
+{
+    "scripts": {
+        "post-install-cmd": [
+            "zero-to-prod-data-model-envoyer"
+        ],
+        "post-update-cmd": [
+            "zero-to-prod-data-model-envoyer"
+        ]
+    }
+}
 ```
 
 ## DataModels
